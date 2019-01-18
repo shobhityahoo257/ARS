@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "738384147614",
+    "firebase_url": "https://ars1-9831f.firebaseio.com",
+    "project_id": "ars1-9831f",
+    "storage_bucket": "ars1-9831f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738384147614:android:b39c1c9fd36d0159",
+        "android_client_info": {
+          "package_name": "com.example.shobhitverma.ars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738384147614-lgtc5slrtk44424ck75al57u765q5gf9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHoDROUgduqTVviAcDVOmUjvlH4J9nk6g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

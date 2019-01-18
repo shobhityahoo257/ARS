@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ARS</string>
+    <string name="please_enter_mobile_no">Please Enter Mobile No.</string>
+    <string name="please_enter_verification_code">Please Enter Verification Code</string>
+    <string name="send_verification_code">Send Verification Code</string>
+    <string name="verify">Verify</string>
+    <string name="status">status</string>
+</resources>
