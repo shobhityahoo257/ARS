@@ -24,10 +24,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Registration.Activity_Registration" />
-        <activity android:name=".Search.Activity_Home" />
+        <activity android:name=".Search.Activity_Serach" />
         <activity android:name=".Registration.Activity_SignUp" />
         <activity android:name=".Search.Activity_AddRoom" />
-        <activity android:name=".Search.Activity_GetLocation"></activity>
+        <activity android:name=".Search.Activity_GetLocation" />
+
+        <activity android:name=".Home.Activity_Home"></activity>
     </application>
 
 </manifest>

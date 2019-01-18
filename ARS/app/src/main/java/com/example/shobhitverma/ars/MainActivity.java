@@ -1,18 +1,13 @@
 package com.example.shobhitverma.ars;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v4.media.MediaBrowserCompat;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.daimajia.androidanimations.library.Techniques;
+import com.example.shobhitverma.ars.Home.Activity_Home;
 import com.example.shobhitverma.ars.Registration.Activity_Registration;
-import com.example.shobhitverma.ars.Search.Activity_AddRoom;
-import com.example.shobhitverma.ars.Search.Activity_GetLocation;
 import com.google.firebase.auth.FirebaseAuth;
 import com.viksaa.sssplash.lib.activity.AwesomeSplash;
 import com.viksaa.sssplash.lib.cnst.Flags;
@@ -51,13 +46,15 @@ public class MainActivity extends AwesomeSplash {
         if(mAuth.getCurrentUser()!=null)
         {
             Toast.makeText(MainActivity.this,"Already Login.." + mAuth.getCurrentUser().getPhoneNumber(),Toast.LENGTH_LONG).show();
-            startActivity(new Intent(MainActivity.this,Activity_GetLocation.class));
+          //move to home activity
+              startActivity(new Intent(MainActivity.this,Activity_Home.class));
             //startActivity(new Intent(MainActivity.this,Activity_AddRoom.class));
-            finish(); }
+              finish(); }
          else {
+            //Registration Activity
            // startActivity(new Intent(MainActivity.this, Activity_Registration.class));
-            startActivity(new Intent(MainActivity.this,Activity_GetLocation.class));
-            finish();
-        }
+               startActivity(new Intent(MainActivity.this,Activity_Registration.class));
+               finish();
+              }
     }
 }

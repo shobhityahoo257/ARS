@@ -16,6 +16,7 @@
         android:inputType="textPersonName"
         android:text="Name"
         tools:layout_editor_absoluteX="1002dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

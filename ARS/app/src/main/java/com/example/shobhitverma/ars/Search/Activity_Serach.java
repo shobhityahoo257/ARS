@@ -6,7 +6,7 @@ import android.widget.ImageView;
 
 import com.example.shobhitverma.ars.R;
 
-public class Activity_Home extends AppCompatActivity {
+public class Activity_Serach extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ImageView imageView;
     @Override
