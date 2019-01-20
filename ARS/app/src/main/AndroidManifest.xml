@@ -29,7 +29,7 @@
         <activity android:name=".Search.Activity_AddRoom" />
         <activity android:name=".Search.Activity_GetLocation" />
 
-        <activity android:name=".Home.Activity_Home"></activity>
+        <activity android:name=".Home.Activity_FetchRooms"></activity>
     </application>
 
 </manifest>

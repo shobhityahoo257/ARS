@@ -6,7 +6,8 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.daimajia.androidanimations.library.Techniques;
-import com.example.shobhitverma.ars.Home.Activity_Home;
+import com.example.shobhitverma.ars.Home.Activity_FetchRooms;
+//import com.example.shobhitverma.ars.Home.Activity_Home;
 import com.example.shobhitverma.ars.Registration.Activity_Registration;
 import com.google.firebase.auth.FirebaseAuth;
 import com.viksaa.sssplash.lib.activity.AwesomeSplash;
@@ -47,7 +48,7 @@ public class MainActivity extends AwesomeSplash {
         {
             Toast.makeText(MainActivity.this,"Already Login.." + mAuth.getCurrentUser().getPhoneNumber(),Toast.LENGTH_LONG).show();
           //move to home activity
-              startActivity(new Intent(MainActivity.this,Activity_Home.class));
+              startActivity(new Intent(MainActivity.this,Activity_FetchRooms.class));
             //startActivity(new Intent(MainActivity.this,Activity_AddRoom.class));
               finish(); }
          else {

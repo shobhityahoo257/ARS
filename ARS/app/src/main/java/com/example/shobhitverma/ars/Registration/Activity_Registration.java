@@ -11,7 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.shobhitverma.ars.Home.Activity_Home;
+//import com.example.shobhitverma.ars.Home.Activity_Home;
+import com.example.shobhitverma.ars.Home.Activity_FetchRooms;
 import com.example.shobhitverma.ars.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -47,7 +48,7 @@ public class Activity_Registration extends AppCompatActivity {
         if(mAuth.getCurrentUser()!=null)
         {
             Toast.makeText(Activity_Registration.this,"Already Login.." + mAuth.getCurrentUser().getPhoneNumber(),Toast.LENGTH_LONG).show();
-            startActivity(new Intent(Activity_Registration.this, Activity_Home.class));
+            startActivity(new Intent(Activity_Registration.this, Activity_FetchRooms.class));
             finish(); }
 
         callbacks=new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
@@ -74,7 +75,7 @@ public class Activity_Registration extends AppCompatActivity {
                 }
                 else if(e instanceof FirebaseAuthUserCollisionException) {
                     Toast.makeText(Activity_Registration.this, "Already Has Account", Toast.LENGTH_LONG).show();
-                    startActivity(new Intent(Activity_Registration.this, Activity_Home.class));
+                    startActivity(new Intent(Activity_Registration.this, Activity_FetchRooms.class));
                     finish();
                 }
             }
@@ -138,7 +139,7 @@ public class Activity_Registration extends AppCompatActivity {
                         if (task.isSuccessful()) {
 
                             Toast.makeText(Activity_Registration.this,"Successful LogIn",Toast.LENGTH_LONG).show();
-                            startActivity(new Intent(Activity_Registration.this,Activity_Home.class));
+                            startActivity(new Intent(Activity_Registration.this,Activity_FetchRooms.class));
                             finish();
                             FirebaseUser user = task.getResult().getUser();
                             // ...
